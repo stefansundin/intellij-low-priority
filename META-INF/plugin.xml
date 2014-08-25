@@ -1,0 +1,33 @@
+<idea-plugin version="2">
+  <id>com.stefansundin.intellij.low_priority</id>
+  <name>Low Priority</name>
+  <version>0.1</version>
+  <vendor email="stefan@stefansundin.com" url="https://github.com/stefansundin/">Stefan Sundin</vendor>
+
+  <description><![CDATA[
+      <em>Windows only</em><br>
+      This plugin is very simple. It sets the priority of the editor's process to low priority.<br>
+      This is to prevent your computer from lagging as shit when you try to compile something.<br>
+      The plugin uses JNA to make system calls.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <b>0.1</b><br>
+      <ul>
+        <li>First version, the plugin has to be invoked from the <em>Tools</em> menu.</li>
+      </ul>
+    ]]>
+  </change-notes>
+
+  <!-- http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges -->
+  <!-- This is just a guess. I really have no idea. I made this plugin on version 13.1 -->
+  <idea-version since-build="117.105"/>
+
+  <actions>
+      <action id="setLowPriority" class="com.stefansundin.intellij.low_priority.LowPriority" text="Low Priority"
+              description="Sets the editor's priority to low">
+          <add-to-group group-id="ToolsMenu" anchor="last"/>
+      </action>
+  </actions>
+
+</idea-plugin>
