@@ -1,17 +1,21 @@
 <idea-plugin version="2">
   <id>com.stefansundin.intellij.low_priority</id>
   <name>Low Priority</name>
-  <version>0.1</version>
-  <vendor email="stefan@stefansundin.com" url="https://github.com/stefansundin/">Stefan Sundin</vendor>
+  <version>0.2</version>
+  <vendor email="stefan@stefansundin.com" url="https://github.com/stefansundin/intellij-low-priority">Stefan Sundin</vendor>
 
   <description><![CDATA[
-      <em>Windows only</em><br>
-      This plugin is very simple. It sets the priority of the editor's process to low priority.<br>
-      This is to prevent your computer from lagging as shit when you try to compile something.<br>
-      The plugin uses JNA to make system calls.
+      <p><b>Windows only</b></p>
+      <p>This plugin is very simple. It sets the priority of the editor's process to low priority.</p>
+      <p>This is to prevent your computer from lagging as shit when you try to compile something.</p>
+      <p>The plugin uses JNA to make system calls.</p>
     ]]></description>
 
   <change-notes><![CDATA[
+      <b>0.2</b><br>
+      <ul>
+        <li>Child processes are now also changed. This is needed if the plugin is invoked after a child java.exe process has already been created.</li>
+      </ul>
       <b>0.1</b><br>
       <ul>
         <li>First version, the plugin has to be invoked from the <em>Tools</em> menu.</li>
