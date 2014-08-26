@@ -17,3 +17,6 @@ If the editor has already spawned a `java.exe` child process, it's priority will
 4. Click _Install plugin from disk..._
 5. Select the zip file you downloaded in the file picker.
 6. Restart editor.
+
+# Build
+- Compiled with [JDK 6u45](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR) and IntelliJ 13.1.4.
